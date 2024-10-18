@@ -20,3 +20,25 @@ ollama pull mxbai-embed-large
 ```
 
 ## Installation
+
+Install python libraries using pip
+
+```bash
+pip install -r ./requirements.txt
+```
+
+## Configuration
+
+Make sure to provide environment variables when you run the app:
+
+- `OLLAMA_MODEL` - Ollama model to use ("llama3.1:8b" is default)
+- `JIRA_EMAIL` - Your Jira email
+- `JIRA_TOKEN` - Your Jira token
+- `JIRA_PROJECT_KEY` - Two(three?)-letter jira project code
+- `UNITY_PROJECT_PATH` - Path to your Unity project (without trailing `/`, like `../FlappyBirdClone`)
+
+## Running 
+
+1. Make sure that ollama has all the models and running (`ollama serve`)
+2. Run the app `streamlit run ./Intro.py`
+3. Enjoy
